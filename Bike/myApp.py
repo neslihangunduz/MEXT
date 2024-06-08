@@ -16,6 +16,16 @@ st.set_page_config(
     page_icon = ":racing_motorcycle:",
     initial_sidebar_state = "expanded"
 )
+import os
+import streamlit as st
+
+image_path = "cache.png"
+
+if os.path.exists(image_path):
+    st.sidebar.image(image_path, caption='"Özgürlüğe Giden Yol!"')
+else:
+    st.sidebar.error(f"Image not found: {image_path}")
+
 
 @st.cache_resource
 def load_image(image_file):
