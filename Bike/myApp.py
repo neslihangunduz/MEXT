@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 import docx2txt
 from pdf2image import convert_from_path
 import plotly.express as px
+import plotly.graph_objects as go
 
 
 st.set_page_config(
