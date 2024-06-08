@@ -19,14 +19,7 @@ st.set_page_config(
 )
 
 image_path = "Bike/cache.png"
-"""
 
-if os.path.exists(image_path):
-    st.sidebar.image(image_path, caption='"Özgürlüğe Giden Yol!"')
-else:
-    st.sidebar.error(f"Image not found: {image_path}")
-
-"""
 @st.cache_resource
 def load_image(image_file):
     img = Image.open(image_file)
