@@ -17,8 +17,6 @@ st.set_page_config(
     page_icon = ":racing_motorcycle:",
     initial_sidebar_state = "expanded"
 )
-import os
-import streamlit as st
 
 image_path = "Bike/cache.png"
 
@@ -43,7 +41,7 @@ def read_pdf_2(file_path):
 
 menu = ["Ana Sayfa","Hakkında", "Makale & Blog", "Ürün İncelemeleri", "Forum & Tartışma", "Topluluk", "Önce Güvenlik!", "Etkinlik Takvimi", "Yol Hali", "Aramıza Katılın"]
 choice = st.sidebar.selectbox("Menü", menu)
-cacha_image = st.sidebar.image("cache.png", caption='"Özgürlüğe Giden Yol!"')
+cacha_image = st.sidebar.image("Bike/cache.png", caption='"Özgürlüğe Giden Yol!"')
 
 if choice == ("Ana Sayfa"):
     st.title("RÜZGÂRIN RUHU")
