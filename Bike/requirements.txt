@@ -6,3 +6,4 @@ openpyxl
 PyPDF2
 docx2txt
 pdf2image
+plotly
