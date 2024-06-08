@@ -19,7 +19,7 @@ st.set_page_config(
 import os
 import streamlit as st
 
-image_path = "cache.png"
+image_path = "Bike/cache.png"
 
 if os.path.exists(image_path):
     st.sidebar.image(image_path, caption='"Özgürlüğe Giden Yol!"')
