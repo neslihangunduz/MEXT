@@ -44,7 +44,7 @@ if choice == ("Ana Sayfa"):
     
     """)
 if choice == ("Hakkında"):
-    st.title("Motorcular için Buluşma Noktası")#title
+    st.title("Motorcular için Buluşma Noktası")
     st.subheader('Özgürlüğe Giden Yol')
 
     st.write("""
