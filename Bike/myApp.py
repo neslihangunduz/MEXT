@@ -155,5 +155,32 @@ Bu veriler, kask kullanımının motosiklet sürücülerinin kazalardan sağ ç�
 
     st.plotly_chart(fig)
 
+    if choice == ("Etkinlik Takvimi"):
+        st.title("Hızlı ve Güvenli")
+    def on_button_click():
+        uploaded_file = st.file_uploader("Dosya seç", type=['txt', 'pdf', 'csv'])
+        if uploaded_file is not None:
+            st.write("Dosya yüklendi!")
+
+            # Butonu ekle
+
+            # Etkinlik oluştur butonu
+            if st.button("Etkinlik Oluştur"):
+                event_date = st.date_input("Etkinlik Tarihi", date.today())
+                st.write("Seçilen etkinlik tarihi:", event_date)
+
+                # Seçilen tarihe bağlı olarak açıklama metni
+                if event_date:
+                    event_description_label = f"Açıklama ({event_date.strftime('%d.%m.%Y')})"
+                    event_description = st.text_area(event_description_label)
+                    st.write("Açıklama:", event_description)
+
+                    if st.button("Oluştur"):
+                        event_date = st.date_input("Etkinlik Tarihi", date.today())
+                        st.write("Seçilen etkinlik tarihi:", event_date)
+
+
+
+
 
 # python -m streamlit run myApp.py --server.runOnSave=True
