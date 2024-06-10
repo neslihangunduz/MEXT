@@ -162,7 +162,7 @@ Bu veriler, kask kullanımının motosiklet sürücülerinin kazalardan sağ ç�
         if uploaded_file is not None:
             st.write("Dosya yüklendi!")
 
-            # Butonu ekle
+            #  etkinlik Butonu ekle
 
             # Etkinlik oluştur butonu
             if st.button("Etkinlik Oluştur"):
