@@ -169,9 +169,10 @@ if choice == ("Etkinlik Takvimi"):
              event_description = st.text_area(event_description_label)
              st.write("Açıklama:", event_description)
 
-            if st.button("Oluştur"):
-                    event_date = st.date_input("Etkinlik Tarihi", date.today())
-                    st.write("Seçilen etkinlik tarihi:", event_date)
+             if st.button("Oluştur"):
+                 
+                 event_date = st.date_input("Etkinlik Tarihi", date.today())
+                 st.write("Seçilen etkinlik tarihi:", event_date)
 
 
 
