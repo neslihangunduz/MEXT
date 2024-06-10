@@ -156,7 +156,9 @@ Bu veriler, kask kullanımının motosiklet sürücülerinin kazalardan sağ ç�
     st.plotly_chart(fig)
 
 if choice == ("Etkinlik Takvimi"):
-        st.title("Hızlı ve Güvenli")
+    
+    st.title("Hızlı ve Güvenli")
+    
     
         def on_button_click():
             uploaded_file = st.file_uploader("Dosya seç", type=['txt', 'pdf', 'csv'])
